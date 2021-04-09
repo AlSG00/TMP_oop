@@ -52,7 +52,7 @@ void Movie::OutCommon(ofstream& ofst)
 	ofst << mName;
 };
 
-void Movie::OutVowelsCount(ofstream& ofst)
+int Movie::VowelsCount()
 {
 	int vowel = 0;
 	int i = 0;
@@ -74,5 +74,10 @@ void Movie::OutVowelsCount(ofstream& ofst)
 		}
 		i++;
 	}
-	ofst << "Count of vowels = " << vowel << endl;
+	return vowel;
 };
+
+bool Movie::Compare(Movie& second)
+{
+	return VowelsCount() > second.VowelsCount();
+}

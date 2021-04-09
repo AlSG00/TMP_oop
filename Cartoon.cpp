@@ -38,5 +38,5 @@ void Cartoon::Out(ofstream& ofst)
 	{
 		ofst << "Plasticine" << endl;
 	}
-	OutVowelsCount(ofst);
+	ofst << "Count of vowels = " << VowelsCount() << endl;
 }

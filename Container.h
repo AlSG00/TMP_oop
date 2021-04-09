@@ -8,6 +8,7 @@ class Container
 public:
     void In(ifstream& ifst); // ввод
     void Out(ofstream& ofst); // вывод
+    void Sort();
     void Clear(); // очистка контейнера от фигур
     Container(); // инициализация контейнера
     ~Container() { Clear(); } // утилизация контейнера
