@@ -39,3 +39,8 @@ void Cartoon::Out(ofstream& ofst)
 		ofst << "Plasticine" << endl;
 	}
 }
+
+void Cartoon::OutCartoon(ofstream& ofst, Movie* mv) 
+{
+	Out(ofst);
+}

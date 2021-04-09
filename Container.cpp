@@ -41,3 +41,13 @@ void Container::Out(ofstream& ofst)
         cont[i]->Out(ofst);
     }
 }
+
+void Container::OutCartoons(ofstream& ofst) 
+{
+    ofst << "Only Cartoon movies." << endl;
+    for (int i = 0; i < len; i++) 
+    {
+        ofst << i << ": ";
+        cont[i]->OutCartoon(ofst, cont[i]);
+    }
+}

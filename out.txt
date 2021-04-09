@@ -5,5 +5,14 @@ Container contents 5 elements.
 2: It is CARTOON movie called aaa, Creation type = Drawned
 3: It is CARTOON movie called bbb, Creation type = Ragdoll
 4: It is CARTOON movie called ccc, Creation type = Plasticine
+
+
+Filtered container.
+Only Cartoon movies.
+0: 
+1: 
+2: It is CARTOON movie called aaa, Creation type = Drawned
+3: It is CARTOON movie called bbb, Creation type = Ragdoll
+4: It is CARTOON movie called ccc, Creation type = Plasticine
 Empty container. 
 Container contents 0 elements.

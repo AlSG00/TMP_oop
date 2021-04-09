@@ -9,6 +9,7 @@ public:
     void In(ifstream& ifst); // ввод
     void Out(ofstream& ofst); // вывод
     void Clear(); // очистка контейнера от фигур
+    void OutCartoons(ofstream& ofst);
     Container(); // инициализация контейнера
     ~Container() { Clear(); } // утилизация контейнера
 };
