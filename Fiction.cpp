@@ -22,4 +22,5 @@ void Fiction::Out(ofstream& ofst)
 	ofst << "It is FICTION movie called ";
 	OutCommon(ofst);
 	ofst << ", Director's name = " << this->mDirector << endl;
+	OutVowelsCount(ofst);
 }

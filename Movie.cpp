@@ -52,3 +52,27 @@ void Movie::OutCommon(ofstream& ofst)
 	ofst << mName;
 };
 
+void Movie::OutVowelsCount(ofstream& ofst)
+{
+	int vowel = 0;
+	int i = 0;
+	while (mName[i] != '\0')
+	{
+		switch (mName[i])
+		{
+		case 'A':
+		case 'a':
+		case 'E':
+		case 'e':
+		case 'I':
+		case 'i':
+		case 'O':
+		case 'o':
+		case 'U':
+		case 'u':
+			vowel++;
+		}
+		i++;
+	}
+	ofst << "Count of vowels = " << vowel << endl;
+};
