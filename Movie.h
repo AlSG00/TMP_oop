@@ -8,10 +8,12 @@ class Movie
 {
 public:
 	char mName[50];
+	char mCountry[50];
 	// иденитфикация, порождение и ввод фигуры из пото-ка
 	static Movie* In(ifstream& ifst);
 	virtual void InData(ifstream& ifst) = 0; // ввод
 	virtual void Out(ofstream& ofst) = 0; // вывод
 	void InCommon(ifstream& ifst);
 	void OutCommon(ofstream& ofst);
+	void OutCountry(ofstream& ofst);
 };
