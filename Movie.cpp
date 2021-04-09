@@ -6,7 +6,8 @@
 
 using namespace std;
 
-Movie* Movie::In(ifstream& ifst) {
+Movie* Movie::In(ifstream& ifst) 
+{
 	Movie* mv;
 	int k;
 	ifst >> k;
@@ -17,17 +18,17 @@ Movie* Movie::In(ifstream& ifst) {
 	case 2:
 		mv = new Fiction;
 		break;
-	default: //Если попадаем сюда, то застрянем. Временное решение: пусть мудрость с неправильным ключом просто не будет заноситься в контейнер
+	default:
 		char Junk[50]; //для мусора
-		ifst.getline(Junk, 50); //Здесь - выражение
-		ifst.getline(Junk, 50); //Здесь - уникальная характеристика
-		ifst.getline(Junk, 50); //Здесь - оценка
+		ifst.getline(Junk, 50);
+		ifst.getline(Junk, 50);
+		ifst.getline(Junk, 50);
 		return 0;
 	}
 	string Line; //Временное решение на случай переполнения
 	getline(ifst, Line); //Строка заносится в Line
 	getline(ifst, Line); //Строка заносится в Line
-	if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 100
+	if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);
 		return mv;

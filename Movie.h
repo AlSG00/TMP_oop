@@ -4,7 +4,8 @@
 
 using namespace std;
 
-class Movie {
+class Movie 
+{
 public:
 	char mName[50];
 	// иденитфикация, порождение и ввод фигуры из пото-ка

@@ -5,7 +5,7 @@ using namespace std;
 
 void Fiction::InData(ifstream& ifst)
 {
-	string Line; //Временное решение на случай переполнения
+	string Line;
 	getline(ifst, Line); //Строка заносится в Line
 	if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
 		strcpy_s(this->mDirector, 50, Line.c_str());

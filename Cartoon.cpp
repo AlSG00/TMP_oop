@@ -5,7 +5,7 @@ using namespace std;
 
 void Cartoon::InData(ifstream& ifst) 
 {
-	int Line; //Временное решение на случай переполнения
+	int Line;
 	ifst >> Line;
 	if (Line == 0)
 	{
