@@ -28,15 +28,15 @@ void Cartoon::Out(ofstream& ofst)
 	ofst << ", Creation type = ";
 	if (mType == 0)
 	{
-		ofst << "Drawned";
+		ofst << "Drawned" << endl;
 	}
 	else if (mType == 1)
 	{
-		ofst << "Ragdoll";
+		ofst << "Ragdoll" << endl;
 	}
 	else if (mType == 2)
 	{
-		ofst << "Plasticine";
+		ofst << "Plasticine" << endl;
 	}
-	OutCountry(ofst);
+	ofst << "Count of vowels = " << VowelsCount() << endl;
 }
