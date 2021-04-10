@@ -1,6 +1,7 @@
 #include "Movie.h"
 #include "Cartoon.h"
 #include "Fiction.h"
+#include "Documentary.h"
 #include <iostream>
 #include <string>
 
@@ -18,6 +19,9 @@ Movie* Movie::In(ifstream& ifst)
 	case 2:
 		mv = new Fiction;
 		break;
+	case 3:
+		mv = new Documentary;
+		break;
 	default:
 		char Junk[50]; //дл€ мусора
 		ifst.getline(Junk, 50);
@@ -28,13 +32,15 @@ Movie* Movie::In(ifstream& ifst)
 	string Line; //¬ременное решение на случай переполнени€
 	getline(ifst, Line); //—трока заноситс€ в Line
 	getline(ifst, Line); //—трока заноситс€ в Line
-	if (Line.length() < 50) { //ѕроверка на переполнение - если длина Line < 50
+	if (Line.length() < 50) 
+	{ //ѕроверка на переполнение - если длина Line < 50
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);
 		ifst >> mv->mCountry;
 		return mv;
 	}
-	else { //иначе придетс€ отсечь лишнее
+	else 
+	{ //иначе придетс€ отсечь лишнее
 		Line.resize(49);
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);

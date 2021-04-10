@@ -13,5 +13,6 @@ void Documentary::Out(ofstream& ofst)
 	ofst << "It is DOCUMENTARY movie called ";
 	OutCommon(ofst);
 	ofst << ", Release Year = ";
-	ofst << mYear << endl;
+	ofst << mYear /*<< endl*/;
+	OutCountry(ofst);
 }
