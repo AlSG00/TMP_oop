@@ -1,11 +1,12 @@
+#pragma once
 #include "Movie.h"
 
 class Container 
 {
     enum { max_len = 100 }; // максимальная длина
-    int len; // текущая длина
     Movie* cont[max_len];
 public:
+    int len; // текущая длина
     void In(ifstream& ifst); // ввод
     void Out(ofstream& ofst); // вывод
     void Sort();
