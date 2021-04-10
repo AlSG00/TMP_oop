@@ -5,7 +5,7 @@ using namespace std;
 
 void Cartoon::InData(ifstream& ifst) 
 {
-	int Line; //Временное решение на случай переполнения
+	int Line;
 	ifst >> Line;
 	if (Line == 0)
 	{
@@ -28,14 +28,15 @@ void Cartoon::Out(ofstream& ofst)
 	ofst << ", Creation type = ";
 	if (mType == 0)
 	{
-		ofst << "Drawned" << endl;
+		ofst << "Drawned";
 	}
 	else if (mType == 1)
 	{
-		ofst << "Ragdoll" << endl;
+		ofst << "Ragdoll";
 	}
 	else if (mType == 2)
 	{
-		ofst << "Plasticine" << endl;
+		ofst << "Plasticine";
 	}
+	OutCountry(ofst);
 }

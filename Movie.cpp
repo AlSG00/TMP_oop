@@ -1,13 +1,13 @@
 #include "Movie.h"
 #include "Cartoon.h"
 #include "Fiction.h"
-#include "Documentary.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-Movie* Movie::In(ifstream& ifst) {
+Movie* Movie::In(ifstream& ifst) 
+{
 	Movie* mv;
 	int k;
 	ifst >> k;
@@ -17,9 +17,6 @@ Movie* Movie::In(ifstream& ifst) {
 		break;
 	case 2:
 		mv = new Fiction;
-		break;
-	case 3:
-		mv = new Documentary;
 		break;
 	default:
 		char Junk[50]; //для мусора
@@ -34,12 +31,14 @@ Movie* Movie::In(ifstream& ifst) {
 	if (Line.length() < 50) { //Проверка на переполнение - если длина Line < 50
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);
+		ifst >> mv->mCountry;
 		return mv;
 	}
 	else { //иначе придется отсечь лишнее
 		Line.resize(49);
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);
+		ifst >> mv->mCountry;
 		return mv;
 	}
 	Line.clear();
@@ -53,5 +52,10 @@ void Movie::InCommon(ifstream& ifst)
 void Movie::OutCommon(ofstream& ofst)
 {
 	ofst << mName;
+};
+
+void Movie::OutCountry(ofstream& ofst)
+{
+	ofst << ", Made in : " << mCountry << endl;
 };
 

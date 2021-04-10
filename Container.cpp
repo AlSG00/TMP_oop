@@ -27,7 +27,7 @@ void Container::In(ifstream& ifst)
         }
         else
         {
-            /*ньхайю оепеонкмемхъ*/
+            break;
         }
     }
 }
