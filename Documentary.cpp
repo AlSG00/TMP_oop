@@ -15,4 +15,5 @@ void Documentary::Out(ofstream& ofst)
 	ofst << ", Release Year = ";
 	ofst << mYear /*<< endl*/;
 	OutCountry(ofst);
+	ofst << ", Count of vowels = " << VowelsCount() << endl;
 }
