@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Cartoon::InData(ifstream& ifst) 
+void Cartoon::InData(ifstream& ifst)
 {
 	int Line;
 	ifst >> Line;
@@ -40,4 +40,9 @@ void Cartoon::Out(ofstream& ofst)
 	}
 	OutCountry(ofst);
 	ofst << ", Count of vowels = " << VowelsCount() << endl;
+}
+
+void Cartoon::OutCartoon(ofstream& ofst, Movie* mv) 
+{
+	Out(ofst);
 }

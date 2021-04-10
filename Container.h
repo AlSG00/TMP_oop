@@ -10,6 +10,7 @@ public:
     void Out(ofstream& ofst); // вывод
     void Sort();
     void Clear(); // очистка контейнера от фигур
+    void OutCartoons(ofstream& ofst);
     Container(); // инициализация контейнера
     ~Container() { Clear(); } // утилизация контейнера
 };

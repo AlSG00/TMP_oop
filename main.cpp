@@ -17,15 +17,17 @@ int main(int argc, char* argv[])
     ofstream ofst(argv[2]);
 
     cout << "Start" << endl;
-
     Container c = Container();
     c.In(ifst);
     ofst << "Filled container. " << endl;
     c.Out(ofst);
-    ofst << "\n\nSorted container." << endl;
 
+    ofst << "\n\nSorted container." << endl;
     c.Sort();
     c.Out(ofst);
+
+    ofst << "\n\nFiltered container." << endl;
+    c.OutCartoons(ofst);
 
     c.Clear();
     ofst << "Empty container. " << endl;

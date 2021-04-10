@@ -50,6 +50,11 @@ Movie* Movie::In(ifstream& ifst)
 	Line.clear();
 }
 
+void Movie::OutCartoon(ofstream& ofst, Movie* sp)
+{
+	ofst << endl;
+}
+
 void Movie::InCommon(ifstream& ifst)
 {
 	ifst >> mName;

@@ -1,5 +1,8 @@
 ﻿  Cartoon.cpp
+  Container.cpp
   Documentary.cpp
   Fiction.cpp
+  main.cpp
+  Movie.cpp
   Создание кода...
   TMP_oop.vcxproj -> D:\TMP\TMP_oop\Debug\TMP_oop.exe
