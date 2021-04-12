@@ -1,5 +1,7 @@
 ﻿  Cartoon.cpp
   Container.cpp
+  Documentary.cpp
+  Fiction.cpp
   Movie.cpp
   main.cpp
   Создание кода...
