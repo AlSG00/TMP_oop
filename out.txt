@@ -1,9 +1,34 @@
 Filled container. 
-Container contents 5 elements.
-0: It is FICTION movie called add, Director's name = Name
-1: It is FICTION movie called ffff, Director's name = NoName
-2: It is CARTOON movie called aaa, Creation type = Drawned
-3: It is CARTOON movie called bbb, Creation type = Ragdoll
-4: It is CARTOON movie called ccc, Creation type = Plasticine
+Container contents 4 elements.
+0: It is FICTION movie called ffff, Director's name = NoName
+1: It is CARTOON movie called aaa, Creation type = Drawned
+2: It is CARTOON movie called bbb, Creation type = Plasticine
+3: It is FICTION movie called ccc, Director's name = 2
+
+Multimethod.
+
+Fiction and Cartoon.
+It is FICTION movie called ffff, Director's name = NoName
+It is CARTOON movie called aaa, Creation type = Drawned
+
+Fiction and Cartoon.
+It is FICTION movie called ffff, Director's name = NoName
+It is CARTOON movie called bbb, Creation type = Plasticine
+
+Fiction and Fiction.
+It is FICTION movie called ffff, Director's name = NoName
+It is FICTION movie called ccc, Director's name = 2
+
+Cartoon and Cartoon.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is CARTOON movie called bbb, Creation type = Plasticine
+
+Cartoon and Fiction.
+It is CARTOON movie called aaa, Creation type = Drawned
+It is FICTION movie called ccc, Director's name = 2
+
+Cartoon and Fiction.
+It is CARTOON movie called bbb, Creation type = Plasticine
+It is FICTION movie called ccc, Director's name = 2
 Empty container. 
 Container contents 0 elements.

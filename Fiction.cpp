@@ -23,3 +23,18 @@ void Fiction::Out(ofstream& ofst)
 	OutCommon(ofst);
 	ofst << ", Director's name = " << this->mDirector << endl;
 }
+
+void Fiction::MultiMethod(Movie* other, ofstream& ofst)
+{
+	other->MMFiction(ofst);
+};
+
+void Fiction::MMCartoon(ofstream& ofst)
+{
+	ofst << "Cartoon and Fiction." << endl;
+};
+
+void Fiction::MMFiction(ofstream& ofst)
+{
+	ofst << "Fiction and Fiction." << endl;
+};
