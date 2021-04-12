@@ -1,2 +1,10 @@
-﻿  Documentary.cpp
+﻿  Cartoon.cpp
+  Container.cpp
+  Container_MultiMethod.cpp
+  Documentary.cpp
+  Fiction.cpp
+  main.cpp
+  Movie.cpp
+  Создание кода...
+  LINK : не найден или не выполнена сборка D:\TMP\TMP_oop\Debug\TMP_oop.exe при последней инкрементной компоновке; выполняется полная компоновка
   TMP_oop.vcxproj -> D:\TMP\TMP_oop\Debug\TMP_oop.exe

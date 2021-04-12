@@ -13,4 +13,9 @@ public:
 	virtual void Out(ofstream& ofst) = 0; // вывод
 	void InCommon(ifstream& ifst);
 	void OutCommon(ofstream& ofst);
+
+	virtual void MultiMethod(Movie* other, ofstream& ofst) = 0;
+	virtual void MMCartoon(ofstream& ofst) = 0;
+	virtual void MMFiction(ofstream& ofst) = 0;
+	virtual void MMDocumentary(ofstream& ofst) = 0;
 };
