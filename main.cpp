@@ -14,9 +14,14 @@ int main(int argc, char* argv[])
         exit(1);
     }
     ifstream ifst(argv[1]);
-    ofstream ofst(argv[2]);
+    ofstream ofst(argv[2]);  
 
     cout << "Start" << endl;
+    if (!ifst)
+    {
+        cout << "No input file!" << endl;
+        return 0;
+    }
     Container c = Container();
     c.In(ifst);
     ofst << "Filled container. " << endl;
