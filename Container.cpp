@@ -13,7 +13,7 @@ void Container::Clear()
     }
     len = 0;
 }
-
+// Функция ввода
 void Container::In(ifstream& ifst)
 {
     while (!ifst.eof())
@@ -31,7 +31,7 @@ void Container::In(ifstream& ifst)
         }
     }
 }
-
+// Функция вывода
 void Container::Out(ofstream& ofst)
 {
     ofst << "Container contents " << len << " elements." << endl;
@@ -41,7 +41,7 @@ void Container::Out(ofstream& ofst)
         cont[i]->Out(ofst);
     }
 }
-
+// Функция сортировки
 void Container::Sort()
 {
     for (int i = 0; i < len - 1; i++)

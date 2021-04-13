@@ -6,7 +6,7 @@ using namespace std;
 void Fiction::InData(ifstream& ifst)
 {
 	string Line;
-	getline(ifst, Line); //Строка заносится в Line
+	getline(ifst, Line);
 	Line.resize(49);
 	strcpy_s(this->mDirector, 50, Line.c_str());
 	Line.clear();

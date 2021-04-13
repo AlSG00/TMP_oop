@@ -2,7 +2,7 @@
 #include "Cartoon.h"
 
 using namespace std;
-
+//Функция ввода
 void Cartoon::InData(ifstream& ifst)
 {
 	int Line;
@@ -28,7 +28,7 @@ void Cartoon::InData(ifstream& ifst)
 	}
 
 }
-
+//Функция вывода
 void Cartoon::Out(ofstream& ofst) 
 {
 	if (!(mType == 0 || mType == 1 || mType == 2))
@@ -56,7 +56,7 @@ void Cartoon::Out(ofstream& ofst)
 		ofst << ", Count of vowels = " << VowelsCount() << endl;
 	}
 }
-
+//Виртуальная функция вывода для OutCartoons
 void Cartoon::OutCartoon(ofstream& ofst, Movie* mv) 
 {
 	Out(ofst);

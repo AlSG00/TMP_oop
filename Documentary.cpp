@@ -2,7 +2,7 @@
 #include "Documentary.h"
 
 using namespace std;
-
+// Функция ввода
 void Documentary::InData(ifstream& ifst)
 {
 	int Line;
@@ -17,7 +17,7 @@ void Documentary::InData(ifstream& ifst)
 		mYear = Line;
 	}
 }
-
+// Функция вывода
 void Documentary::Out(ofstream& ofst)
 {
 	if (1900 > mYear || 2030 < mYear)

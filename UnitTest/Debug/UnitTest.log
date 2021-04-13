@@ -1,2 +1,4 @@
-﻿  UnitTest.cpp
+﻿  pch.cpp
+  UnitTest.cpp
+     Создается библиотека D:\TMP\TMP_oop\Debug\UnitTest.lib и объект D:\TMP\TMP_oop\Debug\UnitTest.exp
   UnitTest.vcxproj -> D:\TMP\TMP_oop\Debug\UnitTest.dll

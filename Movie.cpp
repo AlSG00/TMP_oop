@@ -39,8 +39,8 @@ Movie* Movie::In(ifstream& ifst)
 			return 0;
 		}
 		string Line; //Временное решение на случай переполнения
-		getline(ifst, Line); //Строка заносится в Line
-		getline(ifst, Line); //Строка заносится в Line
+		getline(ifst, Line); 
+		getline(ifst, Line); 
 		Line.resize(49);
 		strcpy_s(mv->mName, 50, Line.c_str());
 		mv->InData(ifst);
