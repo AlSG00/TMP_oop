@@ -9,7 +9,6 @@ void Cartoon::InData(ifstream& ifst)
 	ifst >> Line;
 	if (ifst.fail())
 	{
-		//mType = NULL;
 		return;
 	}
 	else
